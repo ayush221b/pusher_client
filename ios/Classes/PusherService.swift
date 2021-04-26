@@ -94,7 +94,7 @@ class PusherService: MChannel {
             }
         } catch let err {
             Utils.errorLog(msg: err.localizedDescription)
-            result(FlutterError(code: "INIT_ERROR", message: err.localizedDescription, details: err))
+            result(FlutterError(code: "INIT_ERROR", message: err.localizedDescription, details: err.localizedDescription))
         }
         
     }
